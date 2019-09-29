@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abhinaw.OfflineQuizWPF", "Abhinaw.OfflineQuizWPF\Abhinaw.OfflineQuizWPF.csproj", "{4BCE84C1-6E68-427C-898A-23F9C167EB85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abhinaw.OfflineQuizWPF.Test", "Abhinaw.OfflineQuizWPF.Test\Abhinaw.OfflineQuizWPF.Test.csproj", "{A7A2EAB2-CD99-4CA7-A211-2DA1941558DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BCE84C1-6E68-427C-898A-23F9C167EB85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BCE84C1-6E68-427C-898A-23F9C167EB85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BCE84C1-6E68-427C-898A-23F9C167EB85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BCE84C1-6E68-427C-898A-23F9C167EB85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7A2EAB2-CD99-4CA7-A211-2DA1941558DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7A2EAB2-CD99-4CA7-A211-2DA1941558DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7A2EAB2-CD99-4CA7-A211-2DA1941558DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7A2EAB2-CD99-4CA7-A211-2DA1941558DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A4FB2AE-0964-4B4C-B4EA-E702F9945A1D}
+	EndGlobalSection
+EndGlobal

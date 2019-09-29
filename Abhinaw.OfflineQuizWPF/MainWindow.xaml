@@ -1,0 +1,55 @@
+﻿<Window x:Class="Abhinaw.OfflineQuizWPF.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:Converter="clr-namespace:Abhinaw.OfflineQuizWPF.Converters"
+		xmlns:ViewModels="clr-namespace:Abhinaw.OfflineQuizWPF.ViewModel"
+		xmlns:Views="clr-namespace:Abhinaw.OfflineQuizWPF.Views"
+		mc:Ignorable="d"
+		Title="Offline Quiz Application - singh.kr.abhinaw@gmail.com" Height="450" Width="800">
+
+
+	<Window.Resources>
+		<DataTemplate DataType="{x:Type ViewModels:LoginViewModel}">
+			<Views:LoginView />
+		</DataTemplate>
+
+		<DataTemplate DataType="{x:Type ViewModels:InstructionViewModel}">
+			<Views:QuizInstructionView />
+		</DataTemplate>
+
+		<DataTemplate DataType="{x:Type ViewModels:QuizViewModel}">
+			<Views:QuizView />
+		</DataTemplate>
+		<DataTemplate DataType="{x:Type ViewModels:ResultViewModel}">
+			<Views:ResultView />
+		</DataTemplate>
+
+		<Converter:UserNameVisibleConverter x:Key="UserNameVisibleConverter"/>
+		<Converter:UserNameCollapsedConverter x:Key="UserNameCollapsedConverter"/>
+
+	</Window.Resources>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="60"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<Border Background="Gray" BorderBrush="Transparent"
+				Visibility="{Binding Path=UserName, Converter={StaticResource UserNameVisibleConverter}}">
+			<Grid VerticalAlignment="Center">
+				<TextBlock Grid.Row="0" Text="{Binding UserName}" Style="{StaticResource HeaderTextStyle}" HorizontalAlignment="Left"/>
+				<TextBlock Text="{Binding RemainingTime,StringFormat=c}" Style="{StaticResource HeaderTextStyle}" HorizontalAlignment="Right"/>
+			</Grid>
+		</Border>
+		<Border Background="Gray" BorderBrush="Transparent"
+				Visibility="{Binding Path=UserName, Converter={StaticResource UserNameCollapsedConverter}}">
+			<TextBlock Grid.Row="0" Text="Welcome to Offline Quiz!!!" Style="{StaticResource HeaderTextStyle}" HorizontalAlignment="Center"/>
+		</Border>
+			
+		
+		<ContentControl Grid.Row="1" Content="{Binding CurrentPage}" />
+	</Grid>
+
+
+</Window>

@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="Abhinaw.OfflineQuizWPF.Views.ResultView"
+			 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:cv="clr-namespace:Abhinaw.OfflineQuizWPF.Converters"
+			 mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+	<UserControl.Resources>
+		<cv:PassedToColorConverter x:Key="PassedToColorConverter"/>
+		<cv:PassedToTextConverter x:Key="PassedToTextConverter"/>
+	</UserControl.Resources>
+    <Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="0.25*"/>
+			<ColumnDefinition Width="4*"/>
+			<ColumnDefinition Width="0.25*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="40"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<TextBlock Grid.Column="1" Style="{StaticResource InstructionHeaderTextStyle}" Text="Result:"/>
+
+		<Grid Grid.Row="1" Grid.Column="1">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="200"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+
+			<StackPanel>
+				<TextBlock Text="Total Number of questions:" Style="{StaticResource QuestionTextStyle}"/>
+				<TextBlock Text="Correct Question:" Style="{StaticResource QuestionTextStyle}"/>
+				<TextBlock Text="Quiz Started On:" Style="{StaticResource QuestionTextStyle}"/>
+				<TextBlock Text="Quiz Ended On:" Style="{StaticResource QuestionTextStyle}"/>
+				<TextBlock Text="Result:" Style="{StaticResource InstructionHeaderTextStyle}"/>
+			</StackPanel>
+			<StackPanel Grid.Column="1">
+				<TextBlock Text="{Binding Path=TotalQuestion}" Style="{StaticResource QuestionTextStyle}"/>
+				<TextBlock Text="{Binding Path=RightAnswer}" Style="{StaticResource QuestionTextStyle}"/>
+				<TextBlock Text="{Binding Path=QuizStartedOn}" Style="{StaticResource QuestionTextStyle}"/>
+				<TextBlock Text="{Binding Path=QuizCompletedOn}" Style="{StaticResource QuestionTextStyle}"/>
+				<TextBlock Text="{Binding Path=IsPassed,Converter={StaticResource PassedToTextConverter}}" 
+						   Foreground="{Binding Path=IsPassed,Converter={StaticResource PassedToColorConverter}}" 
+						   Style="{StaticResource InstructionHeaderTextStyle}" FontWeight="ExtraBold"/>
+			</StackPanel>
+			
+
+		</Grid>
+		
+	</Grid>
+</UserControl>

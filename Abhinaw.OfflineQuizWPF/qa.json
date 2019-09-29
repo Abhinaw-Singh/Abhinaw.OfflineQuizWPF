@@ -1,0 +1,201 @@
+﻿[
+	{
+
+		"Options": [
+			{
+				"OptionText": "Analytic Engine",
+				"IsCorrect": true
+			},
+			{
+				"OptionText": "Processor",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "Abacus",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "Calculator",
+				"IsCorrect": false
+			}
+		],
+		"QuestionText": "The first mechanical computer designed by Charles Babbage was called ?"
+	},
+	{
+		"Options": [
+			{
+				"OptionText": "Megaframe",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "Super–micro",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "Super computer",
+				"IsCorrect": true
+			},
+			{
+				"OptionText": "Super conductor",
+				"IsCorrect": false
+			}
+		],
+		"QuestionText": "Which of the following is the most powerful type of computer ?"
+	},
+	{
+		"Options": [
+			{
+				"OptionText": "Mother Board",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "Chip",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "CPU",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "Gate",
+				"IsCorrect": true
+			}
+		],
+		"QuestionText": "Which is a single integrated circuit?"
+	},
+	{
+		"Options": [
+			{
+				"OptionText": "An assembly language",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "A machine language",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "A third generation high level language",
+				"IsCorrect": true
+			}
+		],
+		"QuestionText": "C is?"
+	},
+	{
+		"Options": [
+			{
+				"OptionText": "FTP",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "HTTP",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "URL",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "HTML",
+				"IsCorrect": true
+			}
+		],
+		"QuestionText": "Web pages are written using ?"
+	},
+	{
+		"Options": [
+			{
+				"OptionText": "Fourth generation computer",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "Second generation computer",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "First generation computer",
+				"IsCorrect": true
+			}
+		],
+		"QuestionText": "UNIVAC is an example of"
+	},
+	{
+		"Options": [
+			{
+				"OptionText": "VLSI",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "LSI",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "RAM",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "ROM",
+				"IsCorrect": true
+			}
+		],
+		"QuestionText": "Which of the following is an example of non volatile memory ?"
+	},
+	{
+		"Options": [
+			{
+				"OptionText": "1976",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "1975",
+				"IsCorrect": true
+			},
+			{
+				"OptionText": "1970",
+				"IsCorrect": false
+			}
+		],
+		"QuestionText": "The bonded labour system in India was abolished in"
+	},
+	{
+		"Options": [
+			{
+				"OptionText": "Gpverner",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "President",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "Lt. Governer",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "Council Of Minister",
+				"IsCorrect": false
+			}
+		],
+		"QuestionText": "The day to day administration of a Union Territory in India is looked after by a"
+	},
+	{
+		"Options": [
+			{
+				"OptionText": "Rajsthan",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "West Bengal",
+				"IsCorrect": false
+			},
+			{
+				"OptionText": "Uttar Pradesh",
+				"IsCorrect": true
+			},
+			{
+				"OptionText": "Tamilnadu",
+				"IsCorrect": false
+			}
+		],
+		"QuestionText": "Which state has the largest number of Lok Sabha members?"
+	}
+]
